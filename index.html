@@ -8,25 +8,26 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
     <div class="me-container">
         <header>
             <picture class="pfp">
-                <!-- lägg till bild här  -->
-                 <img src="arrow.png" alt="Profilbild" class="profile-pic">
+                <img src="arrow.png" alt="Profilbild" class="profile-pic">
             </picture>
             <h1>Erik Rehnberg</h1>
             <p></p>
-            <p>Email: erik.rehnberg@hotmail.com</p>
-            <p>Gmail: kippzta@gmail.com</p>
-            <p class="github-link">Github: <a href="https://github.com/Kippzta" target="_blank" rel="noopener">Kippzta</a> </p>
+            <p>Email: <a href="mailto:erik.rehnberg@hotmail.com">erik.rehnberg@hotmail.com </a> </p>
+            <p>Gmail: <a href="mailto:kippzta@gmail.com">kippzta@gmail.com</a></p>
+            <p class="github-link">Github: <a href="https://github.com/Kippzta" target="_blank"
+                    rel="noopener">Kippzta</a> <br> (https://github.com/Kippzta)</p>
         </header>
         <section>
             <h2>Profil</h2>
             <p>
-                27 år med blandad arbetslivserfarenhet från olika branscher.<br>
+                28 år med blandad arbetslivserfarenhet från olika branscher.<br>
                 Alltid haft ett stort intresse för datorer och studerar just nu till Java-programmerare.<br>
                 Ser fram emot att arbeta inom IT efter examen.<br>
                 Jag är nyfiken, engagerad och gillar att lösa problem tillsammans med andra.
@@ -35,18 +36,33 @@
         <section>
             <h2>Färdigheter</h2>
             <ul id="skill-list">
-                <!-- Lägg till färdigheter -->
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>En del HTML & CSS</li>
+                <li>Samarbetsförmåga</li>
+                <li> Självständig</li>
+                <li>Engelska (flytande)</li>
             </ul>
         </section>
         <section>
             <h2>Tidigare erfarenheter</h2>
             <ul class="job-list">
-                <li>Rejmes - Personlig servicetekniker</li>
-                <li>Br.Storm - Snickare</li>
-                <li>Releasy AB - KundSupport</li>
-                <li>BT Toyota - Truckmontör</li>
+                <li>Rejmes - Personlig servicetekniker <span class="dateTxt">(JUNI 2017 — APRIL 2018) </span></li>
+                <li>Br.Storm - Snickare <span class="dateTxt">(JUNI 2018 — JANUARI 2019) </span></li>
+                <li>BT Toyota - Truckmontör <span class="dateTxt">(MARS 2019 — APRIL 2020)</span></li>
+                <li>Releasy AB - KundSupport <span class="dateTxt">(NOVEMBER 2021 — DECEMBER 2022)</span></li>
             </ul>
         </section>
+        <section>
+            <h2>Utbildning</h2>
+            <ul class="edu-list">
+                <li>Anders Ljungstedts Gymnasium - Fordonsteknisk , Fordon och Teknik</li>
+                <li>Högskoleförberedande kurser på NTI samt Programmering 1 och 2.</li>
+                <li>Jönköping University - Java Utvecklare (Pågående)</li>
+            </ul>
+        </section>
+        <footer> &copy; 2026 Erik Rehnberg. All rights reserved. <hr>
+        <button onclick="generatePDF()" id="pdfBtn">Spara som PDF</button></footer>
     </div>
 
 </body>
